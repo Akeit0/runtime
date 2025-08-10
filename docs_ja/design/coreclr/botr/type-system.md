@@ -51,7 +51,7 @@ CLR の他の部分へ種々の情報を提供する補助的なデータ構造�
 
 型システムは CLR の多くの部分に提供されるサービスであり、主要なコンポーネントの大半が型システムの挙動に何らかの依存を持つ。次の図は型システムに影響を与える一般的なデータフローを示す。網羅的ではないが、主要な情報の流れを示している。
 
-![dependencies](images/type-system-dependencies.png)
+![dependencies](../../../../docs/design/coreclr/botr/images/type-system-dependencies.png)
 
 ### 本コンポーネントが依存するもの
 

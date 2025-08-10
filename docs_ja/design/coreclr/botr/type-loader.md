@@ -19,7 +19,7 @@ Type Loader の設計
 
 この性能要件は辞書検索的アプローチを退け、次のような高レベルのアーキテクチャを採ることになる。
 
-![Figure 1](images/typeloader-fig1.png)
+![Figure 1](../../../../docs/design/coreclr/botr/images/typeloader-fig1.png)
 
 Figure 1 抽象的な高レベルのオブジェクト設計
 
@@ -78,7 +78,7 @@ object CreateClass()
 
 CLR で最も汎用的な型の指定は `TypeHandle` である。これは、`MethodTable`（`System.Object` や `List<string>` のような「通常の」型）または `TypeDesc`（byref、pointer、function pointer、generic 変数）へのポインタを内包する抽象的な実体で、2 つの handle が等しいのは同じ型を表す場合に限る。領域節約のため、`TypeHandle` が `TypeDesc` を内包している事実はポインタの下から 2 ビット目を 1 に立てて示す（例: (ptr | 2)）。`TypeDesc` は抽象で、以下の継承階層を持つ。
 
-![Figure 2](images/typeloader-fig2.png)
+![Figure 2](../../../../docs/design/coreclr/botr/images/typeloader-fig2.png)
 
 Figure 2 TypeDesc 階層
 
@@ -175,7 +175,7 @@ type loader のさまざまな箇所で動作するコードでは、どの load
 
 generics を使わない世界では、すべてが単純である。`TypeDesc` で表されない通常の型は 1 つの `MethodTable` を持ち、それが対応する `EEClass` を指し、`EEClass` は逆に `MethodTable` を指す。型の各インスタンスは、最初のフィールド（オフセット 0）として `MethodTable` へのポインタを持つ（すなわち参照値のアドレス）。領域節約のため、当該型で宣言されたメソッドを表す `MethodDesc` は、`EEClass` から指されるチャンクの連結リストにまとめられる注4。
 
-![Figure 3](images/typeloader-fig3.png)
+![Figure 3](../../../../docs/design/coreclr/botr/images/typeloader-fig3.png)
 
 Figure 3 非 generic メソッドのみを持つ非 generic 型
 
@@ -228,7 +228,7 @@ Canonical Instantiation（正準具象化）
 
 generics の登場により、ランタイムが読み込む型の数は増加傾向にある。`List<string>` と `List<object>` のように具象化が異なる generic 型は、それぞれ異なる型（各々に `MethodTable` がある）だが、両者が共有できる情報は少なくない。共有はメモリフットプリントに良い影響を与え、ひいては性能にも寄与する。
 
-![Figure 4](images/typeloader-fig4.png)
+![Figure 4](../../../../docs/design/coreclr/botr/images/typeloader-fig4.png)
 
 Figure 4 非 generic メソッドのみを持つ generic 型 ― 共有される EEClass
 

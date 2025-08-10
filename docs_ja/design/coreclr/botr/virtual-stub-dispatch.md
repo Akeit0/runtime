@@ -90,7 +90,7 @@ JIT コンパイラへインターフェイス呼び出しのターゲットを�
 
 以下は小さなクラス構造（C# で表現）と、各クラスに対して得られる実装テーブルとスロット マップの例です。
 
-![Figure 1](images/virtualstubdispatch-fig1.png)
+![Figure 1](../../../../docs/design/coreclr/botr/images/virtualstubdispatch-fig1.png)
 
 このマップのサブマップの第 1 列は、従来の仮想テーブル表示におけるスロット番号に対応します（`System.Object` の 4 つの仮想メソッドは簡潔のため省略）。実装の探索は常に「ボトムアップ」です。例えば型 `B` のオブジェクトで `I.Foo` を呼びたい場合、まず `B` のスロットマップで `I.Foo` のマッピングを探します。なければ `A` のスロットマップを見て見つけます。そこには、`I` の仮想スロット 0（`I.Foo`）は仮想スロット 4 により実装される、とあります。次に `B` のスロットマップに戻り、仮想スロット 4 の実装を探すと、自身の実装テーブルのスロット 1 で実装されることがわかります。
 
@@ -124,7 +124,7 @@ MethodTable -> [DispatchMap ->] ImplementationTable
 
 インターフェイス ディスパッチはスタブ経由で行われます。スタブはすべてオンデマンド生成され、最終的には「トークンとオブジェクトを実装に対応付け、その実装にフォワードする」役目を担います。スタブは 3 種類があり、以下の図の制御フローで連携します。
 
-![Figure 2](images/virtualstubdispatch-fig2.png)
+![Figure 2](../../../../docs/design/coreclr/botr/images/virtualstubdispatch-fig2.png)
 
 #### ジェネリック リゾルバ（Generic Resolver）
 
@@ -148,11 +148,11 @@ MethodTable -> [DispatchMap ->] ImplementationTable
 
 従来のインターフェイス vtable ディスパッチのコードシーケンスは次のようになります。
 
-![Figure 3](images/virtualstubdispatch-fig3.png)
+![Figure 3](../../../../docs/design/coreclr/botr/images/virtualstubdispatch-fig3.png)
 
 典型的なスタブディスパッチのシーケンスは次です。
 
-![Figure 1](images/virtualstubdispatch-fig4.png)
+![Figure 1](../../../../docs/design/coreclr/botr/images/virtualstubdispatch-fig4.png)
 
 ここで `expectedMT`／`failure`／`target` はスタブにエンコードされた定数です。典型的なスタブの列は従来機構と命令数が同等で、メモリ間接の少なさにより高速かつワーキングセット寄与が小さくなり得ます。JIT された呼び出し側のコードも小さくなります（実質的な処理はスタブ側にあるため）。ただしこれは呼び出し頻度が低いサイトで有利です。失敗分岐は x86 の分岐予測が成功パスを選ぶよう配置されています。
 
