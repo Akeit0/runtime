@@ -1,0 +1,376 @@
+# Docs Translation Progress (JA)
+
+This tracker lists all Markdown files under `docs/` and the translation status based on whether a mirrored file exists under `docs_ja/` with the same relative path.
+
+- English docs: 361
+- Japanese translated: 7
+- Coverage: ~1.9%
+
+Conventions and workflow: see `Trannslation_Rules.md`.
+
+## Checklist (mirrors `docs/` tree)
+
+- [ ] docs/README.md
+- [ ] docs/area-owners.md
+- [ ] docs/coding-guidelines/EventLogging.md
+- [ ] docs/coding-guidelines/adding-api-guidelines.md
+- [ ] docs/coding-guidelines/api-guidelines/README.md
+- [ ] docs/coding-guidelines/api-guidelines/System.Memory.md
+- [ ] docs/coding-guidelines/api-guidelines/nullability.md
+- [ ] docs/coding-guidelines/breaking-change-definitions.md
+- [ ] docs/coding-guidelines/breaking-change-rules.md
+- [ ] docs/coding-guidelines/breaking-changes.md
+- [ ] docs/coding-guidelines/clr-code-guide.md
+- [ ] docs/coding-guidelines/clr-jit-coding-conventions.md
+- [ ] docs/coding-guidelines/code-formatting-tools.md
+- [ ] docs/coding-guidelines/coding-style.md
+- [ ] docs/coding-guidelines/cross-platform-guidelines.md
+- [ ] docs/coding-guidelines/cross-platform-performance-and-eventing.md
+- [ ] docs/coding-guidelines/framework-design-guidelines-digest.md
+- [ ] docs/coding-guidelines/interop-guidelines.md
+- [ ] docs/coding-guidelines/libraries-packaging.md
+- [ ] docs/coding-guidelines/mono-code-guide.md
+- [ ] docs/coding-guidelines/performance-guidelines.md
+- [ ] docs/coding-guidelines/project-guidelines.md
+- [ ] docs/coding-guidelines/source-generator-guidelines.md
+- [ ] docs/coding-guidelines/updating-ref-source.md
+- [ ] docs/coding-guidelines/vectorization-guidelines.md
+- [ ] docs/deep-dive-blog-posts.md
+- [x] docs/design/coreclr/botr/README.md
+- [ ] docs/design/coreclr/botr/botr-faq.md
+- [ ] docs/design/coreclr/botr/clr-abi.md
+- [ ] docs/design/coreclr/botr/corelib.md
+- [ ] docs/design/coreclr/botr/dac-notes.md
+- [x] docs/design/coreclr/botr/exceptions.md
+- [ ] docs/design/coreclr/botr/garbage-collection.md
+- [ ] docs/design/coreclr/botr/guide-for-porting.md
+- [ ] docs/design/coreclr/botr/ilc-architecture.md
+- [x] docs/design/coreclr/botr/intro-to-clr.md
+- [ ] docs/design/coreclr/botr/logging.md
+- [ ] docs/design/coreclr/botr/managed-type-system.md
+- [ ] docs/design/coreclr/botr/method-descriptor.md
+- [ ] docs/design/coreclr/botr/mixed-mode.md
+- [ ] docs/design/coreclr/botr/profilability.md
+- [ ] docs/design/coreclr/botr/profiling.md
+- [ ] docs/design/coreclr/botr/r2r-perfmap-format.md
+- [ ] docs/design/coreclr/botr/readytorun-format.md
+- [ ] docs/design/coreclr/botr/readytorun-overview.md
+- [x] docs/design/coreclr/botr/shared-generics.md
+- [ ] docs/design/coreclr/botr/stackwalking.md
+- [ ] docs/design/coreclr/botr/threading.md
+- [x] docs/design/coreclr/botr/type-loader.md
+- [x] docs/design/coreclr/botr/type-system.md
+- [ ] docs/design/coreclr/botr/vectors-and-intrinsics.md
+- [x] docs/design/coreclr/botr/virtual-stub-dispatch.md
+- [ ] docs/design/coreclr/botr/xplat-minidump-generation.md
+- [ ] docs/design/coreclr/jit/DeabstractionAndConditionalEscapeAnalysis.md
+- [ ] docs/design/coreclr/jit/GC-write-barriers.md
+- [ ] docs/design/coreclr/jit/GuardedDevirtualization.md
+- [ ] docs/design/coreclr/jit/Jit Architecture Plan 2009.md
+- [ ] docs/design/coreclr/jit/JitOptimizerPlanningGuide.md
+- [ ] docs/design/coreclr/jit/JitOptimizerTodoAssessment.md
+- [ ] docs/design/coreclr/jit/Optimization of Heap Access in Value Numbering.md
+- [ ] docs/design/coreclr/jit/Perf-Score.md
+- [ ] docs/design/coreclr/jit/Stack Buffer Overflow Protection.md
+- [ ] docs/design/coreclr/jit/arm64-jit-frame-layout.md
+- [ ] docs/design/coreclr/jit/eh-writethru.md
+- [ ] docs/design/coreclr/jit/finally-optimizations.md
+- [ ] docs/design/coreclr/jit/first-class-structs.md
+- [ ] docs/design/coreclr/jit/hot-cold-splitting.md
+- [ ] docs/design/coreclr/jit/inline-size-estimates.md
+- [ ] docs/design/coreclr/jit/inlining-plans.md
+- [ ] docs/design/coreclr/jit/investigate-stress.md
+- [ ] docs/design/coreclr/jit/jit-call-morphing.md
+- [ ] docs/design/coreclr/jit/jit-gc-info-x86.md
+- [ ] docs/design/coreclr/jit/longs-on-32bit-arch.md
+- [ ] docs/design/coreclr/jit/lsra-detail.md
+- [ ] docs/design/coreclr/jit/lsra-heuristic-tuning.md
+- [ ] docs/design/coreclr/jit/lsra-throughput.md
+- [ ] docs/design/coreclr/jit/multi-reg-call-nodes.md
+- [ ] docs/design/coreclr/jit/object-stack-allocation.md
+- [ ] docs/design/coreclr/jit/porting-ryujit.md
+- [ ] docs/design/coreclr/jit/profile-count-reconstruction.md
+- [ ] docs/design/coreclr/jit/removing-embedded-statements.md
+- [ ] docs/design/coreclr/jit/ryujit-overview.md
+- [ ] docs/design/coreclr/jit/ryujit-tutorial.md
+- [ ] docs/design/coreclr/jit/struct-abi.md
+- [ ] docs/design/coreclr/jit/variabletracking.md
+- [ ] docs/design/coreclr/jit/viewing-jit-dumps.md
+- [ ] docs/design/coreclr/profiling/IL Rewriting Basics.md
+- [ ] docs/design/coreclr/profiling/Profiler Attach on CoreCLR.md
+- [ ] docs/design/coreclr/profiling/Profiler Breaking Changes.md
+- [ ] docs/design/coreclr/profiling/Profiler Loading.md
+- [ ] docs/design/coreclr/profiling/ReJIT on Attach.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Attach.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Attach2.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/CORPROF_E_UNSUPPORTED_CALL_SEQUENCE.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Creating an IL-rewriting profiler.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Debugging - Activation.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Debugging - SOS and IDs.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/DoStackSnapshot - Callback CONTEXT Registers.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/DoStackSnapshot - Exception Filters.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/DoStackSnapshot - HRESULTs.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/ELT Hooks - The Basics.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/ELT Hooks - tail calls.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/GC Heap and Alignment Padding.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Generics and Your Profiler.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Metadata Tokens, Run-Time IDs, and Type Loading.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Profiler Detach.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Profiler stack walking Basics and beyond.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/README.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/ReJIT - Limitations.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/ReJIT - The Basics.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Sample A Signature Blob Parser for your Profiler.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Tail call JIT conditions.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/Type Forwarding.md
+- [ ] docs/design/coreclr/profiling/davbr-blog-archive/When is it safe to use ObjectIDs.md
+- [ ] docs/design/datacontracts/CodeVersions.md
+- [ ] docs/design/datacontracts/DacStreams.md
+- [ ] docs/design/datacontracts/EcmaMetadata.md
+- [ ] docs/design/datacontracts/Exception.md
+- [ ] docs/design/datacontracts/ExecutionManager.md
+- [ ] docs/design/datacontracts/GCHandle.md
+- [ ] docs/design/datacontracts/Loader.md
+- [ ] docs/design/datacontracts/Object.md
+- [ ] docs/design/datacontracts/PlatformMetadata.md
+- [ ] docs/design/datacontracts/PrecodeStubs.md
+- [ ] docs/design/datacontracts/ReJIT.md
+- [ ] docs/design/datacontracts/RuntimeInfo.md
+- [ ] docs/design/datacontracts/RuntimeTypeSystem.md
+- [ ] docs/design/datacontracts/StackWalk.md
+- [ ] docs/design/datacontracts/StressLog.md
+- [ ] docs/design/datacontracts/Thread.md
+- [ ] docs/design/datacontracts/contract-descriptor.md
+- [ ] docs/design/datacontracts/data_descriptor.md
+- [ ] docs/design/datacontracts/datacontracts_design.md
+- [ ] docs/design/datacontracts/debug_interface_globals.md
+- [ ] docs/design/features/AssemblyLoadContext.ContextualReflection.md
+- [ ] docs/design/features/COM-activation.md
+- [ ] docs/design/features/DotNetCore-SharedPackageStore.md
+- [ ] docs/design/features/DynamicPgo-InstrumentedTiers.md
+- [ ] docs/design/features/DynamicPgo.md
+- [ ] docs/design/features/IJW-activation.md
+- [ ] docs/design/features/InlineArrayAttribute.md
+- [ ] docs/design/features/Linux-Hugepage-Crossgen2.md
+- [ ] docs/design/features/NonGC-Heap.md
+- [ ] docs/design/features/OSRX64EpilogRedesign.md
+- [ ] docs/design/features/OnStackReplacement.md
+- [ ] docs/design/features/OsrDetailsAndDebugging.md
+- [ ] docs/design/features/PinnedHeap.md
+- [ ] docs/design/features/RandomizedAllocationSampling.md
+- [ ] docs/design/features/ScalableApproximateCounting.md
+- [ ] docs/design/features/StringDeduplication.md
+- [ ] docs/design/features/additional-deps.md
+- [ ] docs/design/features/arm64-intrinsics.md
+- [ ] docs/design/features/assembly-conflict-resolution.md
+- [ ] docs/design/features/assemblyloadcontext.md
+- [ ] docs/design/features/byreflike-generics.md
+- [ ] docs/design/features/cet-feature.md
+- [ ] docs/design/features/code-generation-strategies.md
+- [ ] docs/design/features/code-versioning-profiler-breaking-changes.md
+- [ ] docs/design/features/code-versioning.md
+- [ ] docs/design/features/covariant-return-methods.md
+- [ ] docs/design/features/cross-dac.md
+- [ ] docs/design/features/crossgen2-compilation-structure-enhancements.md
+- [ ] docs/design/features/default-interface-methods.md
+- [ ] docs/design/features/dllmap.md
+- [ ] docs/design/features/dotnet-pgo.md
+- [ ] docs/design/features/event-counter.md
+- [ ] docs/design/features/framework-version-resolution.md
+- [ ] docs/design/features/globalization-hybrid-mode.md
+- [ ] docs/design/features/globalization-icu-wasm.md
+- [ ] docs/design/features/globalization-invariant-mode.md
+- [ ] docs/design/features/host-component-dependencies-resolution.md
+- [ ] docs/design/features/host-components.md
+- [ ] docs/design/features/host-download-urls.md
+- [ ] docs/design/features/host-error-codes.md
+- [ ] docs/design/features/host-probing.md
+- [ ] docs/design/features/host-runtime-information.md
+- [ ] docs/design/features/host-startup-hook.md
+- [ ] docs/design/features/host-testing.md
+- [ ] docs/design/features/host-tracing.md
+- [ ] docs/design/features/hosting-layer-apis.md
+- [ ] docs/design/features/hw-intrinsics.md
+- [ ] docs/design/features/jump-stubs.md
+- [ ] docs/design/features/localization-options.md
+- [ ] docs/design/features/native-hosting.md
+- [ ] docs/design/features/raw-eventlistener.md
+- [ ] docs/design/features/readytorun-composite-format-design.md
+- [ ] docs/design/features/readytorun-pinvoke.md
+- [ ] docs/design/features/roll-forward-on-no-candidate-fx.md
+- [ ] docs/design/features/sharedfx-lookup.md
+- [ ] docs/design/features/source-generator-com.md
+- [ ] docs/design/features/source-generator-pinvokes.md
+- [ ] docs/design/features/standalone-gc-eventing.md
+- [ ] docs/design/features/standalone-gc-loading.md
+- [ ] docs/design/features/tailcalls-with-helpers.md
+- [ ] docs/design/features/tiered-compilation.md
+- [ ] docs/design/features/timezone-invariant-mode.md
+- [ ] docs/design/features/typemap.md
+- [ ] docs/design/features/unloadability.md
+- [ ] docs/design/features/unsafeaccessors.md
+- [ ] docs/design/features/user-events.md
+- [ ] docs/design/features/y2038.md
+- [ ] docs/design/libraries/ComInterfaceGenerator/Compatibility.md
+- [ ] docs/design/libraries/ComInterfaceGenerator/DerivedComInterfaces.md
+- [ ] docs/design/libraries/ComInterfaceGenerator/UnmanagedToManagedEH.md
+- [ ] docs/design/libraries/ComInterfaceGenerator/VTableStubs.md
+- [ ] docs/design/libraries/LibraryImportGenerator/Compatibility.md
+- [ ] docs/design/libraries/LibraryImportGenerator/Pipeline.md
+- [ ] docs/design/libraries/LibraryImportGenerator/SpanMarshallers.md
+- [ ] docs/design/libraries/LibraryImportGenerator/StructMarshalling.md
+- [ ] docs/design/libraries/LibraryImportGenerator/UserTypeMarshallingV2.md
+- [ ] docs/design/mono/aot.md
+- [ ] docs/design/mono/components.md
+- [ ] docs/design/mono/debugger.md
+- [ ] docs/design/mono/diagnostics-tracing.md
+- [ ] docs/design/mono/jiterpreter.md
+- [ ] docs/design/mono/llvm.md
+- [ ] docs/design/mono/mobile-runtimeconfig-json.md
+- [ ] docs/design/mono/mono-library-mode.md
+- [ ] docs/design/mono/mono-manpage-1.md
+- [ ] docs/design/mono/mono-thread-state-machine.md
+- [ ] docs/design/mono/profiled-aot.md
+- [ ] docs/design/mono/runtime-ilgen.md
+- [ ] docs/design/mono/unloadability.md
+- [ ] docs/design/mono/wasm-aot.md
+- [ ] docs/design/mono/web/README.md
+- [ ] docs/design/mono/web/aot.md
+- [ ] docs/design/mono/web/bitcode.md
+- [ ] docs/design/mono/web/coop-suspend.md
+- [ ] docs/design/mono/web/exception-handling.md
+- [ ] docs/design/mono/web/generic-sharing.md
+- [ ] docs/design/mono/web/generics.md
+- [ ] docs/design/mono/web/glossary.md
+- [ ] docs/design/mono/web/gsharedvt.md
+- [ ] docs/design/mono/web/linear-ir.md
+- [ ] docs/design/mono/web/llvm-backend.md
+- [ ] docs/design/mono/web/memory-management.md
+- [ ] docs/design/mono/web/mini-porting.md
+- [ ] docs/design/mono/web/mono-error.md
+- [ ] docs/design/mono/web/other.md
+- [ ] docs/design/mono/web/register-allocation.md
+- [ ] docs/design/mono/web/soft-debugger-wire-format.md
+- [ ] docs/design/mono/web/soft-debugger.md
+- [ ] docs/design/mono/web/thread-safety.md
+- [ ] docs/design/mono/web/trampolines.md
+- [ ] docs/design/mono/webcil.md
+- [ ] docs/design/security/System.Collections.Generic.Dictionary.md
+- [ ] docs/design/security/System.HashCode.md
+- [ ] docs/design/security/System.StringComparer.md
+- [ ] docs/design/security/unix-tmp.md
+- [ ] docs/design/specs/Ecma-335-Augments.md
+- [ ] docs/design/specs/Memory-model.md
+- [ ] docs/design/specs/PE-COFF.md
+- [ ] docs/design/specs/PortablePdb-Metadata.md
+- [ ] docs/design/specs/runtime-async.md
+- [ ] docs/design/tools/illink/DAM-on-type-and-RUC-interaction.md
+- [ ] docs/design/tools/illink/compiler-generated-code-handling.md
+- [ ] docs/design/tools/illink/constant-propagation-and-branch-removal.md
+- [ ] docs/design/tools/illink/feature-attribute-semantics.md
+- [ ] docs/design/tools/illink/feature-checks.md
+- [ ] docs/design/tools/illink/redundant-suppressions.md
+- [ ] docs/design/tools/illink/reflection-flow.md
+- [ ] docs/design/tools/illink/trimmed-assemblies.md
+- [ ] docs/infra/automation.md
+- [ ] docs/infra/test-configurations.md
+- [ ] docs/issue-cleanup.md
+- [ ] docs/issue-mappings/README.md
+- [ ] docs/issues-pr-management.md
+- [ ] docs/project/analyzers.md
+- [ ] docs/project/api-review-process.md
+- [ ] docs/project/branching-guide.md
+- [ ] docs/project/breaking-change-process.md
+- [ ] docs/project/copyright.md
+- [ ] docs/project/dogfooding.md
+- [ ] docs/project/dotnet-filenames.md
+- [ ] docs/project/dotnet-standards.md
+- [ ] docs/project/garbage-collector-guidelines.md
+- [ ] docs/project/glossary.md
+- [ ] docs/project/issue-guide.md
+- [ ] docs/project/jit-testing.md
+- [ ] docs/project/library-servicing.md
+- [ ] docs/project/licensing-assets.md
+- [ ] docs/project/linux-build-methodology.md
+- [ ] docs/project/linux-performance-tracing.md
+- [ ] docs/project/list-of-diagnostics.md
+- [ ] docs/project/os-onboarding.md
+- [ ] docs/project/performance-guidelines.md
+- [ ] docs/project/profiling-api-status.md
+- [ ] docs/project/public-signing.md
+- [ ] docs/project/repo-organization.md
+- [ ] docs/project/strong-name-signing.md
+- [ ] docs/project/updating-jitinterface.md
+- [ ] docs/project/versioning.md
+- [ ] docs/project/writing-tests.md
+- [ ] docs/tools/illink/README.md
+- [ ] docs/tools/illink/custom-steps.md
+- [ ] docs/tools/illink/data-formats.md
+- [ ] docs/tools/illink/error-codes.md
+- [ ] docs/tools/illink/illink-options.md
+- [ ] docs/tools/illink/illink-tasks.md
+- [ ] docs/tools/illink/methods-kept-by-interface.md
+- [ ] docs/tools/illink/optimizations.md
+- [ ] docs/tools/illink/serialization.md
+- [ ] docs/workflow/Codespaces.md
+- [ ] docs/workflow/README.md
+- [ ] docs/workflow/building/coreclr/README.md
+- [ ] docs/workflow/building/coreclr/android.md
+- [ ] docs/workflow/building/coreclr/cross-building.md
+- [ ] docs/workflow/building/coreclr/freebsd-instructions.md
+- [ ] docs/workflow/building/coreclr/ios.md
+- [ ] docs/workflow/building/coreclr/nativeaot.md
+- [ ] docs/workflow/building/libraries/README.md
+- [ ] docs/workflow/building/libraries/code-coverage.md
+- [ ] docs/workflow/building/libraries/cross-building.md
+- [ ] docs/workflow/building/libraries/webassembly-instructions.md
+- [ ] docs/workflow/building/mono/README.md
+- [ ] docs/workflow/ci/coreclr-ci-health.md
+- [ ] docs/workflow/ci/disabling-tests.md
+- [ ] docs/workflow/ci/failure-analysis.md
+- [ ] docs/workflow/ci/pipelines-overview.md
+- [ ] docs/workflow/ci/pr-guide.md
+- [ ] docs/workflow/ci/triaging-failures.md
+- [ ] docs/workflow/debugging/coreclr/debugging-aot-compilers.md
+- [ ] docs/workflow/debugging/coreclr/debugging-compiler-dependency-analysis.md
+- [ ] docs/workflow/debugging/coreclr/debugging-runtime.md
+- [ ] docs/workflow/debugging/libraries/debugging-corelib.md
+- [ ] docs/workflow/debugging/libraries/debugging-vscode.md
+- [ ] docs/workflow/debugging/libraries/unix-instructions.md
+- [ ] docs/workflow/debugging/libraries/windows-instructions.md
+- [ ] docs/workflow/debugging/mono/android-debugging.md
+- [ ] docs/workflow/debugging/mono/wasm-debugging.md
+- [ ] docs/workflow/editing-and-debugging.md
+- [ ] docs/workflow/requirements/freebsd-requirements.md
+- [ ] docs/workflow/requirements/linux-requirements.md
+- [ ] docs/workflow/requirements/macos-requirements.md
+- [ ] docs/workflow/requirements/windows-requirements.md
+- [ ] docs/workflow/testing/coreclr/automated-stress-testing-diagnostic-server.md
+- [ ] docs/workflow/testing/coreclr/disasm-checks.md
+- [ ] docs/workflow/testing/coreclr/gc-stress-run-readme.md
+- [ ] docs/workflow/testing/coreclr/running-aspnet-benchmarks-with-crossgen2.md
+- [ ] docs/workflow/testing/coreclr/test-configuration.md
+- [ ] docs/workflow/testing/coreclr/testing.md
+- [ ] docs/workflow/testing/coreclr/unix-test-instructions.md
+- [ ] docs/workflow/testing/coreclr/windows-test-instructions.md
+- [ ] docs/workflow/testing/host/testing.md
+- [ ] docs/workflow/testing/host/using-apphost.md
+- [ ] docs/workflow/testing/libraries/debugging-wasm.md
+- [ ] docs/workflow/testing/libraries/filtering-tests.md
+- [ ] docs/workflow/testing/libraries/testing-android.md
+- [ ] docs/workflow/testing/libraries/testing-apple.md
+- [ ] docs/workflow/testing/libraries/testing-wasm.md
+- [ ] docs/workflow/testing/libraries/testing.md
+- [ ] docs/workflow/testing/mono/testing.md
+- [ ] docs/workflow/testing/testing-managed-tools.md
+- [ ] docs/workflow/testing/testing-workloads.md
+- [ ] docs/workflow/testing/using-corerun-and-coreroot.md
+- [ ] docs/workflow/testing/using-dev-shipping-packages.md
+- [ ] docs/workflow/testing/visualstudio.md
+- [ ] docs/workflow/trimming/ILLink-files.md
+- [ ] docs/workflow/trimming/feature-switches.md
+- [ ] docs/workflow/using-docker.md
+
+Notes:
+- A checked item indicates a corresponding JA file exists under `docs_ja/` with the same relative path.
+- For detailed per-file status (WIP/Review/Published), see the metadata block in each JA file.
