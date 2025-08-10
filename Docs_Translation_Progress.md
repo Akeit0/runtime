@@ -42,12 +42,12 @@ Conventions and workflow: see `Trannslation_Rules.md`.
 - [ ] docs/design/coreclr/botr/corelib.md
 - [ ] docs/design/coreclr/botr/dac-notes.md
 - [x] docs/design/coreclr/botr/exceptions.md
-- [ ] docs/design/coreclr/botr/garbage-collection.md
+- [x] docs/design/coreclr/botr/garbage-collection.md
 - [ ] docs/design/coreclr/botr/guide-for-porting.md
 - [ ] docs/design/coreclr/botr/ilc-architecture.md
 - [x] docs/design/coreclr/botr/intro-to-clr.md
 - [ ] docs/design/coreclr/botr/logging.md
-- [ ] docs/design/coreclr/botr/managed-type-system.md
+- [x] docs/design/coreclr/botr/managed-type-system.md
 - [ ] docs/design/coreclr/botr/method-descriptor.md
 - [ ] docs/design/coreclr/botr/mixed-mode.md
 - [ ] docs/design/coreclr/botr/profilability.md
@@ -56,8 +56,8 @@ Conventions and workflow: see `Trannslation_Rules.md`.
 - [ ] docs/design/coreclr/botr/readytorun-format.md
 - [ ] docs/design/coreclr/botr/readytorun-overview.md
 - [x] docs/design/coreclr/botr/shared-generics.md
-- [ ] docs/design/coreclr/botr/stackwalking.md
-- [ ] docs/design/coreclr/botr/threading.md
+- [x] docs/design/coreclr/botr/stackwalking.md
+- [x] docs/design/coreclr/botr/threading.md
 - [x] docs/design/coreclr/botr/type-loader.md
 - [x] docs/design/coreclr/botr/type-system.md
 - [ ] docs/design/coreclr/botr/vectors-and-intrinsics.md

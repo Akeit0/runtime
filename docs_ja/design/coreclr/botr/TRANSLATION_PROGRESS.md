@@ -8,12 +8,12 @@ Conventions: see `Trannslation_Rules.md`.
 - [ ] corelib.md
 - [ ] dac-notes.md
 - [x] exceptions.md
-- [ ] garbage-collection.md
+- [x] garbage-collection.md
 - [ ] guide-for-porting.md
 - [ ] ilc-architecture.md
 - [x] intro-to-clr.md
 - [ ] logging.md
-- [ ] managed-type-system.md
+- [x] managed-type-system.md
 - [x] method-descriptor.md
 - [ ] mixed-mode.md
 - [ ] profilability.md
