@@ -39,7 +39,7 @@ Conventions and workflow: see `Trannslation_Rules.md`.
 - [x] docs/design/coreclr/botr/README.md
 - [ ] docs/design/coreclr/botr/botr-faq.md
 - [ ] docs/design/coreclr/botr/clr-abi.md
-- [ ] docs/design/coreclr/botr/corelib.md
+- [x] docs/design/coreclr/botr/corelib.md
 - [ ] docs/design/coreclr/botr/dac-notes.md
 - [x] docs/design/coreclr/botr/exceptions.md
 - [x] docs/design/coreclr/botr/garbage-collection.md

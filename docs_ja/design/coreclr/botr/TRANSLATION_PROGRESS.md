@@ -5,7 +5,7 @@ Conventions: see `Trannslation_Rules.md`.
 - [x] README.md
 - [x] botr-faq.md
 - [ ] clr-abi.md
-- [ ] corelib.md
+- [x] corelib.md
 - [ ] dac-notes.md
 - [x] exceptions.md
 - [x] garbage-collection.md
