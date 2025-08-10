@@ -5,6 +5,8 @@ Translator: akeit0, AI
 Date: 2025-08-10
 License: MIT
 -->
+翻訳元
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/design/coreclr/botr/type-loader.md
 
 Type Loader の設計
 ===

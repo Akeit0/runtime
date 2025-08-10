@@ -7,6 +7,9 @@ updated: 2025-08-10
 notes: 主要セクション（Managed vs. Native、Data Structures、Thread Lifetimes、Suspension の冒頭）を先行翻訳。残りは追補予定。
 -->
 
+翻訳元
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/design/coreclr/botr/threading.md
+
 # CLR のスレッディング概要（CLR Threading Overview）
 
 ## マネージ スレッドとネイティブ スレッド（Managed vs. Native Threads）

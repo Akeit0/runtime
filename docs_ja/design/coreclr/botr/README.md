@@ -6,6 +6,9 @@ Date: 2025-08-10
 License: MIT
 -->
 
+翻訳元
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/design/coreclr/botr/README.md
+
 # ランタイムの書 (Book of the Runtime)
 
 .NET Runtime 向け Book of the Runtime (BOTR) へようこそ。これは .NET Runtime の非自明な内部に関する記事のコレクションである。想定読者は、実際にコードを変更する開発者、あるいはランタイムを深く理解したい読者である。

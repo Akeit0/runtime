@@ -6,6 +6,10 @@ updated: 2025-08-10
 License: MIT
 -->
 
+翻訳元
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/design/coreclr/botr/intro-to-clr.md
+
+
 # 共通言語ランタイム（CLR）入門（Introduction to the Common Language Runtime (CLR)）
 
 Vance Morrison（[@vancem](https://github.com/vancem)）著 — 2007

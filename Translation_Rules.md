@@ -1,7 +1,7 @@
 ## 1. ライセンスと帰属
 - 本リポジトリの翻訳物は **MIT License** に従います。
-- 各翻訳ファイルの先頭に次の **メタデータヘッダ（HTMLコメント）**を付与します:
-
+- 各翻訳ファイルの先頭に次の **メタデータヘッダ（HTMLコメント）**とurlを付与します:
+```md
 <!--
 Translated from: docs/<path>.md
 Source SHA: cf2786c01ce
@@ -11,6 +11,9 @@ notes:
 License: MIT
 -->
 
+翻訳元
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/path.md
+```
 ## 2. 進め方
 対応関係
 翻訳元　docs/
