@@ -33,7 +33,7 @@ CLR は独自にマネージ スレッドの等価な抽象を提供します。
 
 すべての `Thread` は `ThreadStore`（同じく [threads.h][threads.h]）に保持され、既知の `Thread` のリストになっています。全マネージ スレッドを列挙するには `ThreadStoreLock` を取得し、`ThreadStore::GetAllThreadList` を使います。未開始のスレッドや、対応するネイティブ スレッドが既に終了したものも含まれることがあります。
 
-[threads.h]: ../../../../src/coreclr/vm/threads.h
+[threads.h]: https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/threads.h
 
 ネイティブ スレッドに割り当て済みの各マネージ スレッドは、そのネイティブ スレッド上の TLS スロットから到達できます。これにより実行中のネイティブ スレッドから `GetThread()` で対応する `Thread` を取得できます。
 
@@ -109,8 +109,8 @@ AppDomain をアンロードするには、その AppDomain でコードを実�
 
 任意オブジェクトがロック/条件変数として使われ得るため、各オブジェクトはロック情報の保存先を持つ必要があります。これは「オブジェクト ヘッダー」と「シンク ブロック」で実現します。オブジェクト ヘッダー（各オブジェクト先頭のワード）はハッシュコード等の用途に使われ、余地があればロック状態（保有スレッドのマネージ スレッド ID、未保有なら 0）も保持します。スピンで取得できない、またはヘッダーが他用途で埋まっている場合は、`Sync Block Table` にシンク ブロックを作成し、イベントで効率的に待機します。`Monitor.Wait/Pulse` による条件変数利用時は常にインフレート（シンク ブロック必須）です。詳細は [syncblk.h][syncblk.h]/[syncblk.cpp][syncblk.cpp] 参照。
 
-[syncblk.h]: ../../../../src/coreclr/vm/syncblk.h
-[syncblk.cpp]: ../../../../src/coreclr/vm/syncblk.cpp
+[syncblk.h]: https://github.com/dotnet/runtime/blob/main/src/coreclr/vm/syncblk.h
+[syncblk.cpp]: https://github.com/dotnet/runtime/blob/main//src/coreclr/vm/syncblk.cpp
 
 ### ネイティブ（Native）
 

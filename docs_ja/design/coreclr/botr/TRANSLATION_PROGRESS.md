@@ -22,7 +22,7 @@ Conventions: see `Trannslation_Rules.md`.
 - [ ] readytorun-format.md
 - [ ] readytorun-overview.md
 - [x] shared-generics.md
-- [ ] stackwalking.md
+- [x] stackwalking.md
 - [x] threading.md
 - [x] type-loader.md
 - [x] type-system.md
