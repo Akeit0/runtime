@@ -12,7 +12,7 @@ License: MIT
 -->
 
 翻訳元
-https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/path.md
+https://github.com/dotnet/runtime/blob/cf2786c01cebaaf27352808d2fb37a2613876a94/docs/<path>.md
 ```
 ## 2. 進め方
 対応関係

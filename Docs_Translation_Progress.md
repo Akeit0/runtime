@@ -48,7 +48,7 @@ Conventions and workflow: see `Trannslation_Rules.md`.
 - [x] docs/design/coreclr/botr/intro-to-clr.md
 - [ ] docs/design/coreclr/botr/logging.md
 - [x] docs/design/coreclr/botr/managed-type-system.md
-- [ ] docs/design/coreclr/botr/method-descriptor.md
+- [x] docs/design/coreclr/botr/method-descriptor.md
 - [ ] docs/design/coreclr/botr/mixed-mode.md
 - [ ] docs/design/coreclr/botr/profilability.md
 - [ ] docs/design/coreclr/botr/profiling.md
